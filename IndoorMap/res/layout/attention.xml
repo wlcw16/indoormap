@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/attention_mask_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/attention_mask_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/attention_mask_center_rl"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/mask_around" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/attention_mask_bottom_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/attention_mask_center_rl"
+            android:background="@drawable/mask_around" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/attention_mask_left_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/attention_mask_bottom_rl"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/attention_mask_top_rl"
+            android:layout_toLeftOf="@+id/attention_mask_center_rl"
+            android:background="@drawable/mask_around" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/attention_mask_right_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/attention_mask_bottom_rl"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/attention_mask_top_rl"
+            android:layout_toRightOf="@+id/attention_mask_center_rl"
+            android:background="@drawable/mask_around" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/attention_mask_center_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mask" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/attention_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/att_dialog_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:id="@+id/attention_title_icon_ps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/attention_title_icon_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/attention_title_popuptitle_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/tsinghua_darkgray"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/attention_title_signnum_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_sign_in"
+                    android:textColor="@color/tsinghua_orange"
+                    android:visibility="gone"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/attention_title_distance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_distance"
+                    android:textColor="@color/tsinghua_orange"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/attention_title_info_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/att_btn_dialog_l"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_moreinfo" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="详细信息"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/attention_title_goto_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/att_btn_dialog_r"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/icon_gohere" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="到这里去"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

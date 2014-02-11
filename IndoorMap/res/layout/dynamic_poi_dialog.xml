@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translate"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dynamic_poi_dialog_main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_title_bg" >
+
+            <TextView
+                android:id="@+id/dynamic_poi_dialog_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="阅览室"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/dynamic_poi_dialog_close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dialog_btn_closed" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dynamic_poi_dialog_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/dynamic_poi_dialog_img_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/dialog_pic_placeholder" >
+
+                <ImageView
+                    android:id="@+id/dynamic_poi_dialog_logo_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/dialog_pic_logo" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开放时间"
+                    android:textColor="@color/tsinghua_purple"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dynamic_poi_dialog_opentime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="周一到周日  7:00-18:00"
+                    android:textColor="@color/tsinghua_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地点"
+                    android:textColor="@color/tsinghua_purple"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dynamic_poi_dialog_location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="逸夫楼一层楼梯北侧"
+                    android:textColor="@color/tsinghua_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/dynamic_poi_dialog_info_sv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/dialog_text_box"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/dynamic_poi_dialog_info_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="到2012年底，清华大学图书馆的馆藏总量约有446.2万册（件），形成了以自然科学和工程技术科学文献为主体，兼有人文、社会科学及管理科学文献等多种类型、多种载体的综合性馆藏体系。除中外文图书外，馆藏资源还包括：古籍线装书22万多册；期刊合订本约有56万余册；年订购印刷型期刊3103种；本校博、硕士论文11.6万余篇；缩微资料2.8万种；各类数据库464个；中外文全文电子期刊6.5万余种；中外文电子图书超过640.9万册，电子版学位论文约有235.5万篇。"
+                        android:textColor="@color/tsinghua_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+                android:id="@+id/dynamic_poi_dialog_sign_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn"
+                android:text="签到"
+                android:textColor="@color/purple_text"
+                android:visibility="gone"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

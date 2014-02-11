@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <color name="tsinghua_gray">#686868</color>
+    <color name="tsinghua_darkgray">#353850</color>
+    <color name="tsinghua_lightgray">#BABABA</color>
+    <color name="tsinghua_lightgray2">#8c8c8c</color>
+    <color name="tsinghua_orange">#c97b00</color>
+    <color name="tsinghua_purple">#8434ad</color>
+    <color name="tsinghua_darkpurple">#68497a</color>
+    
+    <color name="titleclick">#ffffff</color>
+    <color name="LightGray">#b0000000</color>
+    <color name="gray_disable">#a1a1a1</color>
+    <!-- 普通界面的文字的颜色 -->
+    <color name="txt_nomal">#7f8ca0</color>
+    <color name="txt_1">#585858</color>
+    <!-- 绿色按钮正常颜色 -->
+    <color name="btn_green">#0c8200</color>
+    <color name="btn_green_unable">#6a6a6a</color>
+
+    <!-- Map信息点的文字的颜色 -->
+    <color name="txt_black">#595959</color>
+    <color name="txt_gray">#afafaf</color>
+
+    <!-- 菜单弹出样式  暂时全部拷贝过来 -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    
+    <color name="dark_gray">#5c5c5c</color>
+    <color name="blue_gray">#7e97bc</color>
+    <color name="light_blue">#98C8FF</color>
+    <color name="orange">#da7600</color>
+    <color name="gray">#565350</color>
+    <color name="gray2">#acacac</color>
+    <color name="gray3">#878888</color>
+    <color name="translate">#00000000</color>
+    <color name="translate2">#00ffffff</color>
+    <color name="green">#aede00</color>
+    <color name="shadow_1">#2b2b2b</color>
+    <!-- 普通界面的文字的颜色 -->
+    <!-- 绿色按钮正常颜色 -->
+
+
+    <!-- Login画面字体颜色 -->
+    <color name="login_1">#686868</color>
+    <color name="login_2">#81c8ff</color>
+    <color name="login_3">#e3ebff</color>
+
+    <!-- shop list 画面字体颜色 -->
+    <color name="shop_list_1">#777777</color>
+    <color name="shop_list_2">#c6a060</color>
+    <color name="shop_list_3">#4e90ff</color>
+
+    <!-- dialog 画面字体颜色 -->
+    <color name="dialog1">#0986b5</color>
+    <color name="dialog2">#b55209</color>
+    <color name="dialog3">#7bb509</color>
+    <color name="dialog4">#aa9e47</color>
+
+    <!-- popupactivity 画面字体颜色 -->
+    <color name="popupactivity1">#4b4b4b</color>
+    <color name="popupactivity2">#739bbe</color>
+    <color name="popupactivity3">#1c7f0a</color>
+    <color name="popupactivity4">#6a6a6a</color>
+
+    <!-- menu 画面字体颜色 -->
+    <color name="menu1">#0090ff</color>
+    <!-- floor表头yanse -->
+     <color name="floortop">#e8f4ff</color>
+
+     <color name="bookquery">#939393</color>
+</resources>

@@ -1,0 +1,64 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    
+    <style name="CustomWindowTitleBackground">
+        <item name="android:background">#565656</item>
+    </style>
+
+    <style name="navigation" parent="android:Theme">
+        <item name="android:windowTitleSize">48dp</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+    </style>
+    
+    <style name="dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="dynamic_poi_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/translate</item>
+        <!-- <item name="android:windowIsFloating">true</item> -->
+    	<item name="android:windowFullscreen">true</item>  
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    
+     <style name="spinner_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_review_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+      <style name="DefineprogressBarStyleSmall" parent="android:style/Widget.ProgressBar">
+	　　<item name="android:indeterminateDrawable">@drawable/loading_book</item> 
+	　　<item name="android:minWidth">37.3333dp</item>
+	　　<item name="android:maxWidth">37.3333dp</item>
+	<item name="android:indeterminateDuration">1500</item>
+	　　<item name="android:minHeight">37.3333dp</item>
+	　　<item name="android:maxHeight">37.3333dp</item>
+　　</style>
+</resources>
